@@ -56,15 +56,16 @@
     "postinstall": "node -e \"console.log('\\u001b[35m\\u001b[1mLove ngx-scanner? You can now donate to our open collective:\\u001b[22m\\u001b[39m\\n > \\u001b[34mhttps://opencollective.com/ngx-scanner/donate\\u001b[0m')\"",
     "heroku-postbuild": "ng build --prod",
     "node":"10.15.1",
-    "npm":"6.8.0"
+    "npm":"6.8.0",
+    "preinstall": "npm install -g angular-cli"
   },
   "dependencies": {
+    "@zxing/library": "0.8.3"
   },
   "peerDependencies": {
     "rxjs": "^6.3.3"
   },
   "devDependencies": {
-    "@zxing/library": "0.8.3",
     "@angular-devkit/build-angular": "~0.10.0",
     "@angular-devkit/core": "^7.0.4",
     "@angular/animations": "^7.0.0",
